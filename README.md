@@ -33,7 +33,7 @@ Here is what you should see:
 ```console
 $ ./run.sh                                                     
 (...)
->:) evil code loaded into: 'C:\Users\sfoxjr\src\windows-def-forwarder-test\app\target\debug\app.exe'
+>:) evil code loaded into: '(...)\app\target\debug\app.exe'
 300
 press enter to exit
 ```
