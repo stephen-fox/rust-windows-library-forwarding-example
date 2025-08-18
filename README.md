@@ -1,9 +1,9 @@
-# Windows import forwarding example with Rust
+# Windows import forwarding example in Rust
 
-Note: This project is for educational purposes only.
+Note: This code is for educational purposes only.
 
 This repository demonstrates proxying a Windows dynamic library using
-import forwarding using Rust. It relies on the Windows compiler's
+import forwarding in Rust. It relies on the Windows compiler's
 [module-definition (DEF)][def] file format. For a full explanation
 of this technique, please refer to ["dll-hijack-by-proxying"][tothi-repo]
 by GitHub user [tothi][tothi].
