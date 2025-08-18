@@ -1,0 +1,2 @@
+EXPORTS
+    add=targetlib_orig.add

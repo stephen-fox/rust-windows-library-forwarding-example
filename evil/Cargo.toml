@@ -1,0 +1,11 @@
+[package]
+name = "evil"
+version = "0.1.0"
+edition = "2024"
+build = "build.rs"
+
+[dependencies]
+
+[lib]
+crate-type = ["cdylib"]
+name = "targetlib"
