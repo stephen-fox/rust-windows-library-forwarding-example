@@ -19,7 +19,7 @@ fn main_with_error() -> Result<(), Box<dyn Error>> {
     }
 
     let mut def_file = project_dir.clone();
-    def_file.push("test.def");
+    def_file.push("targetlib.def");
 
     if !def_file.exists() {
         Err(format!(

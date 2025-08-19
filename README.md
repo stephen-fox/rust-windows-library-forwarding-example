@@ -16,8 +16,8 @@ to another.
 
 Library forwarding relies on the Windows compiler's [module-definition (DEF)][def]
 file format. For a full explanation of this technique, please refer to
-["dll-hijack-by-proxying"][tothi-repo] by GitHub user [tothi][tothi]. I also
-recommend checking out Sam's ["Creating A DLL With Rust" blog posts"][sam-blog].
+["dll-hijack-by-proxying"][tothi-repo] by GitHub user tothi. I also
+recommend checking out Sam's ["Creating A DLL With Rust"][sam-blog].
 
 ps: I use the term "library forwarding" loosely here - I do not believe
 there is a colloquial term that describes such functionality. Other operating
@@ -40,8 +40,8 @@ This example consists of three Rust projects:
   to `targetlib_orig.dll`)
 - `evil` - A library that will pretend to be `targetlib` via library
   forwarding. Library forwarding is enabled at compile time using the
-  `build.rs` script which configures the compiler to use the `test.def`
-  file. Writes a silly message to the process' stderr when loaded (also
+  `build.rs` script which configures the compiler to use `targetlib.def`.
+  Writes a silly message to the process' stderr when loaded (also
   produces a file named `targetlib.dll`)
 - `app` - The application we want to load our `evil` library into.
   Calls targetlib's `add` function and writes the result to stdout

@@ -12,12 +12,14 @@ extern "system" fn DllMain(_: isize, call_reason: u32, _: *mut ()) -> bool {
     true
 }
 
-#[unsafe(no_mangle)]
-fn add() {}
-
 fn attach() {
     eprintln!(
         ">:) evil code loaded into: '{}'",
         std::env::args().collect::<Vec<_>>().join(" ")
     );
 }
+
+// Note: This function is only needed to generate the export
+// symbol - it is never actually executed.
+#[unsafe(no_mangle)]
+fn add() {}
