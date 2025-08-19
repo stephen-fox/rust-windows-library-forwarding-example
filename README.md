@@ -81,6 +81,10 @@ You may find these references interesting as well :)
 
 - ["How to use .def files to create forwarded exports in a Rust dll (cdylib)"][how-to-use-def-files-so]
 - ["Re-export Shared Library Symbols from Other Library (OS X / POSIX)"][reexport-osx-so]
+- [Rust build scripts manual][rust-build-scripts]
+- ["public extern "C" symbols are not public in cdylib target"][rust-99411] (this bug made me sad)
 
 [how-to-use-def-files-so]: https://stackoverflow.com/questions/78177063/how-to-use-def-files-to-create-forwarded-exports-in-a-rust-dll-cdylib
 [reexport-osx-so]: https://stackoverflow.com/questions/20020715/re-export-shared-library-symbols-from-other-library-os-x-posix
+[rust-build-scripts]: https://doc.rust-lang.org/cargo/reference/build-scripts.html
+[rust-99411]: https://github.com/rust-lang/rust/issues/99411
