@@ -14,7 +14,7 @@ extern "system" fn DllMain(_: isize, call_reason: u32, _: *mut ()) -> bool {
 
 fn attach() {
     eprintln!(
-        ">:) evil code loaded into: '{}'",
+        ">:) imposter code loaded into: '{}'",
         std::env::args().collect::<Vec<_>>().join(" ")
     );
 }

@@ -8,7 +8,7 @@ unsafe extern "C" {
 fn main() {
     let result = unsafe { add(100, 200) };
 
-    println!("{result}");
+    println!("add function returned: {result}");
 
     println!("press enter to exit");
 
