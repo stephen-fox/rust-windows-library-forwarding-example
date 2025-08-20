@@ -17,10 +17,11 @@ to another.
 Library forwarding relies on the Windows compiler's [module-definition (DEF)][def]
 file format. For a full explanation of this technique, please refer to
 ["dll-hijack-by-proxying"][tothi-repo] by GitHub user tothi. I also
-recommend checking out Sam's ["Creating A DLL With Rust"][sam-blog].
+recommend checking out Sam's ["Creating A DLL With Rust"][sam-blog]
+blog series.
 
 ps: I use the term "library forwarding" loosely here - I do not believe
-there is a colloquial term that describes such functionality. Other operating
+there is a formal term that describes such functionality. Other operating
 systems' compilers may support this as well (refer to the `See also` section
 for details). Full disclosure: this is a well known technique. I just wanted
 to better understand how it "works" and save everyone from learning the
